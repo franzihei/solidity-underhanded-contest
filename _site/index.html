@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+		<link rel="icon" href="favicon.ico"> 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -48,16 +49,20 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a class="image"><img src="images/illusion1.png" alt="Illusion 1" data-position="center center" /></a>
+							<a class="image"><img src="images/cube_lines.png" alt="Cubes Illusion" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Theme</h2>
-									<p>This year's theme is upgradability of smart contracts, or, more specifically, upgrade mechanisms (also known as proxies).</p>
+									<p>This year's theme is upgradable contracts, or, more specifically, upgrade mechanisms.<br><br>
+										Since a smart contract where a single account is authorized to arbitrarily change its implementation defeats the idea of decentralization, submissions need to contain a mechanism where code can be upgraded but users are (seemingly) still in control. This can be realized via an opt-out mechanism, a way to split the contract or whatever you can come up with. The main requirement is that this mechanism has to be flawed such that there actually is a single account in control, even if it does not seem like it.<br><br>
+										To keep submissions reasonably sized, the contract that is actually to be upgraded should be very small, e.g. an ERC20 contract or a simple registry.
+										Note that the flaw should be in the upgrade mechanism, not in the main contract - you do not have to come up with a reason to actually upgrade the contract, but a little “story” around the hack is always nice, too.
+										</p>
 									</div>
 							</div>
 						</section>
 						<section>
-							<a class="image"><img src="images/illusion2.png" alt="Illusion 2" data-position="center center" /></a>
+							<a class="image"><img src="images/triangle_lines.png" alt="Triangle Illusion" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Judges</h2>
@@ -72,7 +77,7 @@
 							</div>
 						</section>
 						<section>
-							<a class="image"><img src="images/illusion3.png" alt="Illusion 3" data-position="center center" /></a>
+							<a class="image"><img src="images/zet_lines.png" alt="Zeta Illusion" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Prizes</h2>
@@ -98,7 +103,7 @@
 								<section>
 									<span class="icon solid major fa-code"></span>
 									<h4>Brief</h4>
-									<p>Design an upgrade mechanism that looks “safe” (with opt-in/opt-out option) but has a backdoor. Click <a href="https://github.com/franzihei/solidity-underhanded-contest">here</a> for the detailed brief.</p>
+									<p>Design an upgrade mechanism that looks “safe” (with opt-in/opt-out option) but has a backdoor. This means that users should believe that they have control over the upgrade process, either by opting out of the upgrade, splitting the contract or something similar, but in fact, the deployer still has full control. The main contract is not important and should be as small as possible.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-gem"></span>
